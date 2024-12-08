@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Products from "./Products";
 
-export default function Main () {
+export default function Homemain () {
     return (
         <div className="max-w-[1440px] w-full flex flex-col">
 
             
             <div className="w-full h-[58px] flex flex-col justify-center items-center bg-custom3 px-4 text-center">
                 <p className="text-[15px] sm:text-[14px]">Hello Nike App</p>
-                <p className="text-[11px] sm:text-[10px]">Download the app to access everything Nike. Get Your Great</p>
+                <p className="text-[11px] sm:text-[10px]">Download the app to access everything Nike. Get Your Great .</p>
             </div>
 
             
