@@ -1,5 +1,4 @@
 import Homemain from "./components/Homemain";
-import Main from "./components/Homemain";
 
 export default function Home() {
   return (
