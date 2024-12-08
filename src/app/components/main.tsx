@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Products from "./Products";
 
-export default function Main() {
+export default function Main () {
     return (
         <div className="max-w-[1440px] w-full flex flex-col">
 
