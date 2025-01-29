@@ -6,7 +6,7 @@ export default function Help(){
                 <Image
                     className="w-full max-w-[95%]  h-auto"
                     src="/Helppage.png"
-                    alt="image of help page there is no time to make it 😥"
+                    alt="image of help page there is no time to make it"
                     height={1280}
                     width={1428}
                 />

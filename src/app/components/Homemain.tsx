@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Products from "./Products";
+import Allproducts from "../(pages)/(public)/allproducts/page";
 
 export default function Homemain () {
     return (
@@ -42,6 +43,7 @@ export default function Homemain () {
                 </div>
             </div>
             <Products />
+            <Allproducts />
         </div>
     );
 }

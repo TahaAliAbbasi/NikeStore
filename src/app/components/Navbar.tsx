@@ -63,7 +63,7 @@ export default function Navbar() {
        
         <div className="hidden md:flex items-center gap-6 text-sm">
           <ul className="flex list-none gap-6">
-            <li><Link href="/allproducts">Find a Store</Link></li>
+            <li><Link href="/allproducts">All products</Link></li>
             <li>|</li>
             <li><Link href="/help">Help</Link></li>
             <li>|</li>
@@ -111,12 +111,6 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link href="/">Kids</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Sale</Link>
-                  </li>
-                  <li>
-                    <Link href="/">SNKRS</Link>
                   </li>
                 </ul>
               </div>

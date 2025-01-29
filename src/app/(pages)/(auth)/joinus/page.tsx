@@ -1,10 +1,14 @@
+'use client'
+import handleSubmitForm from "@/actions/signupAction";
+import { useFormState } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Joinus() {
+  const [formState, formAction] = useFormState(handleSubmitForm,undefined)
   return (
     <div className="max-w-[1440px] mx-auto flex flex-col justify-center items-center gap-y-6 py-8 px-4">
-      {/* Header Section */}
+     
       <div className="max-w-[530px] text-center">
         <Image
           className="w-[78.47px] h-[60px] mx-auto"
@@ -20,8 +24,8 @@ export default function Joinus() {
         </p>
       </div>
 
-      {/* Input Fields */}
-      <form className="w-full max-w-[324px] flex flex-col gap-y-4">
+      
+      <form action={formAction} className="w-full max-w-[324px] flex flex-col gap-y-4">
         <div className="border border-custom4 rounded-[3px] h-[40px] flex items-center px-3">
           <input
             type="email"
@@ -125,15 +129,23 @@ export default function Joinus() {
           .
         </p>
 
-        <button
-          type="submit"
-          className="w-full h-[40px] bg-black text-white rounded-[3px] hover:bg-gray-800 transition-all"
-        >
-          Join Us
-        </button>
+        
+
+        <div>
+          <input
+            type="submit"
+            value="Join Us"
+            className="w-full h-[40px] bg-black text-white rounded-[3px] hover:bg-gray-800 transition-all"
+          />
+        </div>
+
+        {formState && <p className="text-sm text-red-500 mt-4 bg-red-100 p-2 border border-red-400 rounded">{formState}</p>}
+
+
+
       </form>
 
-      {/* Footer Section */}
+      
       <div className="text-center">
         <p className="text-gray-500">
           Already a Member?{" "}
